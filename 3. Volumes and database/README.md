@@ -12,7 +12,8 @@
     database: postgres
     ```
 3. Add some table from IDE, you can fill it with any data you want:
-4. Now stop the container and run it again to see if changes persisted:
+4. Now stop the container by pressing Ctrl + C from the terminal window where you run the docker compose command
+5. And run it again to see if changes persisted:
     ```
     docker exec -it my-webpage-image bash
     ```

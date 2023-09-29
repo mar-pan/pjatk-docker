@@ -1,10 +1,12 @@
-## During this exercise you will learn how to persist data across multiple Docker runs and how to local Postgres database fast
+## During this exercise you will try to break you colleague work :)
 1. Run the following command to build the image:
     ```
-    docker compose -f docker-compose.yml up d
+    docker build -t my-webpage-image .
     ```
 2. Run your IDE and connect to local Postgres database with the following credentials:
-
+    ```
+    docker run --name my-webpage-image -p 80:80 my-webpage-image
+    ```
 3. Run your browser and go to:
     ```
     http://localhost:80
