@@ -13,7 +13,7 @@
     ```
 4. Connect to your container using the following command:
     ```
-    docker exec -it my-first-image bash
+    docker run -it my-first-image bash
     ```
 5. When inside container check your system version with the following command:
     ```
@@ -29,7 +29,7 @@
     ```
 8. Enter into newly build image with:
     ```
-    docker exec -it my-second-image bash
+    docker run -it my-second-image bash
     ``` 
 9. Check your system version with:
     ```

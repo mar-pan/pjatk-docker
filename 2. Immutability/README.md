@@ -5,7 +5,7 @@
     ```
 2. Run your IDE and connect to local Postgres database with the following credentials:
     ```
-    docker run --name my-webpage-image -p 80:80 my-webpage-image
+    docker run --rm --name my-webpage-image -p 80:80 my-webpage-image
     ```
 3. Run your browser and go to:
     ```
