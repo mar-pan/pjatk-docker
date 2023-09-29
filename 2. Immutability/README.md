@@ -3,7 +3,7 @@
     ```
     docker build -t my-webpage-image .
     ```
-2. Run your IDE and connect to local Postgres database with the following credentials:
+2. Run your freshly built Docker container using the following command (have you notice that the command is different?):
     ```
     docker run --rm --name my-webpage-image -p 80:80 my-webpage-image
     ```
@@ -11,7 +11,7 @@
     ```
     http://localhost:80
     ```
-4. Now lets swap PCs with your colleague and once again enter into container (open second terminal window):
+4. Now lets swap PCs with your colleague and enter into his container (open second terminal window):
     ```
     docker exec -it my-webpage-image bash
     ```
@@ -19,7 +19,7 @@
     ```
     rm -rf /usr/share/nginx/html/index.html
     ```
-6. Now let swap your PCs again and try to reach http://localhost:80 from browser. What happened?:
+6. Now let swap your PCs again and try to reach http://localhost:80 from browser. What happened?
     ```
     http://localhost:80
     ```

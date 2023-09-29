@@ -3,7 +3,7 @@
     ```
     docker build -t my-first-image .
     ```
-2. Run your first Docker container using the following command:
+2. Run your freshly built Docker container using the following command:
     ```
     docker run --name my-first-image my-first-image 
     ```
@@ -11,7 +11,7 @@
     ```
     docker ps
     ```
-4. Connect to your container using the following command:
+4. Run container another time using the following command (this time with interactive mode):
     ```
     docker run -it my-first-image bash
     ```
@@ -19,7 +19,7 @@
     ```
     cat /etc/issue
     ```
-6. Change your system version to Ubuntu 20.04 by changing the FROM instruction inside Dockerfile (1. Dockerfile intro/Dockerfile):
+6. Change system version to Ubuntu 20.04 by changing the FROM instruction inside Dockerfile (1. Dockerfile intro/Dockerfile):
     ```
     FROM ubuntu:18.04
     ```
