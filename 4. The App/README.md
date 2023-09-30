@@ -3,20 +3,16 @@
     ```
     docker compose -f docker-compose.yml up -d
     ```
-2. Run your IDE and connect to local Postgres database with the following credentials:
-    ```
-    host: localhost
-    port: 5432
-    username: username
-    password: password
-    database: postgres
-    ```
-3. Add some table from IDE, you can fill it with any data you want.
-4. Now stop the container with following command:
-    ```
-    docker compose -f docker-compose.yml down
-    ```
-5. And run it again to see if changes persisted:
+2. From browser go to http://localhost:3000 and see if you can see the webpage.
+3. Edit file (4. The App/frontend/src/App.tsx) line 23 add your name for example.
+4. Rebuild images
     ```
     docker compose -f docker-compose.yml up -d
     ```
+5. See if change is reflected in browser.
+6. And run it again to see if changes persisted:
+    ```
+    docker compose -f docker-compose.yml up -d
+    ```
+
+Code taken from https://github.com/docker/awesome-compose/tree/master
