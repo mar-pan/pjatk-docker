@@ -15,7 +15,7 @@ public class HomeController {
 
     @GetMapping("/")
     public Greeting showHome(String name, Model model) {
-        return repository.findById(2).orElse(new Greeting("Not Found 😕"));
+        return repository.(new Greeting("Not Found 😕"));
     }
 
 }
