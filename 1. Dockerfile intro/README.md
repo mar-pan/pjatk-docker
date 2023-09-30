@@ -1,4 +1,4 @@
-## During this exercise you will get familiar with Dockerfiles
+## During this exercise you will get familiar with Dockerfile
 1. Build your first Docker image using the following command:
     ```
     docker build -t my-first-image .
@@ -7,31 +7,35 @@
     ```
     docker run --name my-first-image my-first-image 
     ```
-3. Check if your container is running with the following command:
+3. Check if your container is running with the following command. Have you idea why it is not running?:
     ```
     docker ps
     ```
-4. Run container another time using the following command (this time with interactive mode):
+4. Now use the following command:
+    ```
+    docker ps -a
+    ```
+5. Run container another time using the following command (this time with interactive mode):
     ```
     docker run -it my-first-image bash
     ```
-5. When inside container check your system version with the following command:
+6. When inside container check your system version with the following command:
     ```
     cat /etc/issue
     ```
-6. Change system version to Ubuntu 20.04 by changing the FROM instruction inside Dockerfile (1. Dockerfile intro/Dockerfile):
+7. Change system version to Ubuntu 20.04 by changing the FROM instruction inside Dockerfile (1. Dockerfile intro/Dockerfile):
     ```
     FROM ubuntu:18.04
     ```
-7. Build image with a new version:
+8. Build image with a new version:
     ```
     docker build -t my-second-image .
     ```
-8. Enter into newly build image with:
+9. Enter into newly build image with:
     ```
     docker run -it my-second-image bash
     ``` 
-9. Check your system version with:
+10. Check your system version with:
     ```
     cat /etc/issue
     ```

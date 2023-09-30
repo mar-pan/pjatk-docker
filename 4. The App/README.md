@@ -1,4 +1,4 @@
-## During this exercise you will learn how to persist data across multiple Docker runs and how to local Postgres database fast
+## During this exercise you get familiar with developing application across multiple teams with Docker
 1. Run the following command to build the image:
     ```
     docker compose -f docker-compose.yml up -d
