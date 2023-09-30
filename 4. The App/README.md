@@ -14,5 +14,16 @@
     ```
     docker compose -f docker-compose.yml up -d
     ```
+7. Check two endpoints if they're working correctly
+
+   -http://localhost:8080/api/
+    
+   -http://localhost:8080/api/myEndpoint
+
+9. Uncomment code in the backend section (HomeController) and rebuild your docker project to see working changes
+
+   ```
+   docker compose -f docker-compose.yml up --build -d
+   ```
 
 Code taken from https://github.com/docker/awesome-compose/tree/master
