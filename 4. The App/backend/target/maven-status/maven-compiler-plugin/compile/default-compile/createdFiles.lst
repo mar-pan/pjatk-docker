@@ -1,5 +1,0 @@
-com/company/project/configuration/DockerSecretsProcessor.class
-com/company/project/Application.class
-com/company/project/entity/Greeting.class
-com/company/project/controllers/HomeController.class
-com/company/project/repository/GreetingRepository.class
